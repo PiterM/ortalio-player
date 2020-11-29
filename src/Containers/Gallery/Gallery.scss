@@ -1,0 +1,69 @@
+#ortalio-products-list {
+    max-width: 1110px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 255px);
+    grid-gap: 26px;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 0;
+  
+    .ortalio-product {
+      max-width: 255px;
+      max-height: 273px;
+      margin-bottom: 16px;
+  
+      .thumbnail {
+        position: relative;
+        width: 255px;
+        height: 255px;
+  
+        a {
+          width: 255px;
+          height: 255px;
+  
+          img {
+            width: 255px;
+            height: 255px;
+          }
+  
+          .controls {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+  
+            &:hover {
+              background-color: rgba(255, 255, 255, 0.8);
+            }
+  
+            .MuiSvgIcon-root {
+              width: 90px;
+              height: 90px;
+              z-index: 100;
+            }
+  
+            .MuiCircularProgress-colorPrimary {
+              color: #FCB331;
+              z-index: 100;
+            }
+  
+            svg {
+              fill: #FCB331;
+            }
+          }
+        }
+      }
+  
+      .title {
+        width: 100%;
+        text-align: center;
+        margin: 16px 0;
+      }
+    }
+  }
+  
